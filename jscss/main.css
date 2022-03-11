@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Noto Sans KR';
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.253);
+}
+
+h1{
+	font-size: 6em;
+}
+
+.section{
+	text-align:center;
+}
+
+#logo{
+	color: white;
+	float: left;
+	font-size: 30px;
+	margin: 25px 30px 30px 250px;
+	padding: 5px;
+	font-weight: 900;
+}
+
+#logo a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 5px;
+	color: #000;
+}
+#menu li.active{
+	color: #fff;
+	border-bottom: 2px solid white;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+	font-weight: 500;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+	border-radius: 100px;
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	height: 50px;
+	margin: 30px;
+	right: 250px;
+}
+
+/* Scroll top css */
+
+#scrollTop{
+	width: 50px;
+	height: 50px;
+	background-color: #ffce26;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bold;
+	position: fixed;
+	border: solid 3px #8c26ff;
+	border-radius: 100px;
+	font-size: 13px;
+	cursor: pointer;
+	color: white;
+	bottom: 50px;
+	right: 50px;
+	z-index: 999;
+}
+
+#scrollTop:hover{
+	background-color: #8c26ff;
+	border: solid 3px #ffce26;
+	transition: 0.5s;
+}
+
+#scrollTop img{
+	display: block;
+	margin: 0 auto;
+	padding-top: 7px;
+}
+
+/* page css */
+
+h1{
+
+}
+
+.head_t{
+	font-size: 60px;
+	color: black;
+	margin-top: 100px;
+}
+
+.sub_t{
+	margin: 30px 0 50px 0;
+	color: #444;
+}
+
+#headline{
+	background-color: #ffdc67;
+	padding: 0 10px 0 10px;
+	color: white;
+}
+
+#span_gr{
+	color: rgb(184, 184, 184);
+	font-size: 14px;
+}
+
+#scrolldown{
+	width: 80px;
+	position: relative;
+	bottom: -100px;
+}
+
+#scrolldown:hover{
+	width: 100px;
+	transition: 0.2s;
+}
+
+#box_t{
+	width: 700px;
+	height: 30px;
+	background-color: #ffffff;
+	padding: 20px;
+	font-size: 15px;
+	font-weight: 500;
+	position: relative;
+	bottom: 75px;
+	left: 580px;
+}
+
+#ubox_t{
+	width: 700px;
+	height: 50px;
+	background-color: #363636;
+	padding: 20px;
+	font-size: 15px;
+	font-weight: 500;
+	position: relative;
+	color: #fff;
+	bottom: 75px;
+	left: 580px;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(20, 20, 20);
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 25px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ScrollTop</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./jscss/main.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+<body>
+
+    <header>
+        <h2 id="logo"><a href="#firstPage">SCROLL TOP</a></h2>
+        <nav>
+            <ul id="menu">
+                <li data-menuanchor="firstPage"><a href="#firstPage">우리집</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">고양이는</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">못생겼어</a></li>
+                <li data-menuanchor="4thpage"><a href="#4thpage">더보기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="scrollTop">
+        <img src="img/img_0310_1.png" >TOP
+    </aside>
+
+
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <img src="./img/sc_1.jpg" width="100%" height="100%">
+    </div>
+    <div class="section" id="section1">
+        <img src="./img/sc_2.jpg" width="100%" height="100%">
+    </div>
+    <div class="section" id="section2">
+        <img src="./img/sc_3.jpg" width="100%" height="100%">
+    </div>
+    <div class="section" id="section3">
+        <h1 class="head_t">WHAT DOES <span id="headline"> MY CAT LIKE?</span></h1>
+        <p class="sub_t">춘배는 우다다도 좋아하고 낚시대도 좋아하고 캣타워에 우다다 뛰어올라갔다가 내려오는것도 좋아한다 <br>
+            우리 춘배는 나중에 커서 3대 500 낚시치는 헬짱냥이가 되고싶다 <br><br><span id="span_gr">(아무래도 하루라도 안놀면 근손실이 오는 것 같다)</span></p>
+        <img src="./img/sub_1.jpg" width="1000"> <br>
+        <img src="./img/scrolldown.png" alt="" id="scrolldown">
+    </div>
+</div>
+
+<a href="https://www.instagram.com/chun_chunvly/" target="_blank"><img src="./img/ins.jpg" alt="" width="100%"></a>
+
+<div class="section">
+    <h1 class="head_t">MY CAT LOVES TO DISTURB</h1>
+    <p class="sub_t">얘는 집사 잘 때 창문에서 명치로 점프해서 깨우는걸 좋아한다 <br>
+        집사 게임할 때 F눌러서 점멸 써주는 센스도 갖춘 완벽한 고양이가 틀림없다 <br><br><span id="span_gr">(조만간 현실 유미가 될 것 같다)</span></p>
+    <img src="./img/sc_4.jpg" width="1000"> <br>
+    <p id="box_t">집사가 안놀아주니 마우스를 점령하려다 애교를 부려본다</p>
+    <p id="ubox_t">춘배는 놀아달라고 매번 시위하고 컴퓨터 전원을 꺼버리는 등 행패를 부리다<br> 모니터를 맛있게 말아먹어버렸다</p>
+</div>
+
+<footer>
+    chun_chunvly@cater.com <br>
+    b990821@kaywon.ac.kr
+</footer>
+
+<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript" src="./jscss/main.css"></script>
+<script src="./jscss/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+    
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage',],
+        menu: '#menu',
+        lazyLoad: true,
+        autoScrolling: false,
+        fitToSection: false,
+    });
+    $("#scrollTop").click(function(){
+            console.log("click");
+            $("html, body").animate({scrollTop: 0}, 1000);
+            /* html과 body가. 움직이는데(스크롤탑이 0(0은 처음)으로, 1초동안) */
+        });
+</script>
+
+</body>
+</html>
